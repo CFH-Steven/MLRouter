@@ -5,7 +5,7 @@ target 'RouterDemo' do
   use_frameworks!
 
   # 路由框架（本地 pod，podspec 位于仓库根）
-  pod "MLRouter", :path => "."
+  pod 'MLRouter', :path => "."
 
   # 本地私有仓业务组件：仅凭编译期段宏自注册，宿主零手动接线
   pod "MLCartComponent", :path => "LocalPods/MLCartComponent"
