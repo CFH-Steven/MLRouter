@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
   s.name             = 'MLRouter'
   s.version          = '1.0.0'
   s.summary          = '企业级去单例、全链式点语法、多仓一网打尽的 iOS 路由组件。'
-  s.homepage         = 'https://github.com'
+  s.homepage         = 'https://github.com/CFH-Steven/MLRouter'
   s.license          = { :type => 'MIT', :text => 'Copyright 2026 MLRouter' }
-  s.author           = { 'YourTeam' => 'architecture@yourcompany.com' }
-  s.source           = { :git => 'https://github.com.git', :tag => s.version.to_s }
+  s.author           = { 'CFH-Steven' => '986018145@qq.com' }
+  s.source           = { :git => 'https://github.com/CFH-Steven/MLRouter.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '11.0'
   s.source_files = 'MLRouter/Classes/**/*'
