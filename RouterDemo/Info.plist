@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.w3.org/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
+	<!-- 声明自定义 scheme，让 xcrun simctl openurl / Safari / 其他 App 能把路由 URL 递进来。
+	     缺了这段，`simctl openurl booted "rtkit://test/selfcheck"` 会报「no application installed
+	     with identifier or URL scheme unknown」。GENERATE_INFOPLIST_FILE=YES 时此文件与
+	     build settings 生成的键合并，所以只写增量即可。 -->
+	<key>CFBundleURLTypes</key>
+	<array>
 		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
+			<key>CFBundleURLName</key>
+			<string>com.cfh.router.rtkit</string>
+			<key>CFBundleURLSchemes</key>
 			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
+				<string>rtkit</string>
 			</array>
 		</dict>
-	</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.cfh.router.mlcomp</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>mlcomp</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.cfh.router.mluser</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>mluser</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

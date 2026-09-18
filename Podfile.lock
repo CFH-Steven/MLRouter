@@ -1,0 +1,46 @@
+PODS:
+  - MLCartComponent (0.1.0):
+    - MLRouter
+  - MLRouter (1.0.0)
+  - MLRouterIntegrationTests (0.1.0):
+    - MLRouter
+  - MLRouterIntegrationTests/Tests (0.1.0):
+    - MLCartComponent
+    - MLRouter
+    - MLUserComponent
+  - MLRouterTestKit (0.1.0):
+    - MLRouter
+  - MLUserComponent (0.1.0):
+    - MLCartComponent
+    - MLRouter
+
+DEPENDENCIES:
+  - MLCartComponent (from `LocalPods/MLCartComponent`)
+  - MLRouter (from `MLRouter`)
+  - MLRouterIntegrationTests (from `LocalPods/MLRouterIntegrationTests`)
+  - MLRouterIntegrationTests/Tests (from `LocalPods/MLRouterIntegrationTests`)
+  - MLRouterTestKit (from `LocalPods/MLRouterTestKit`)
+  - MLUserComponent (from `LocalPods/MLUserComponent`)
+
+EXTERNAL SOURCES:
+  MLCartComponent:
+    :path: LocalPods/MLCartComponent
+  MLRouter:
+    :path: MLRouter
+  MLRouterIntegrationTests:
+    :path: LocalPods/MLRouterIntegrationTests
+  MLRouterTestKit:
+    :path: LocalPods/MLRouterTestKit
+  MLUserComponent:
+    :path: LocalPods/MLUserComponent
+
+SPEC CHECKSUMS:
+  MLCartComponent: dcda2741e7d061cdce043ca171bd333a740205db
+  MLRouter: 3141914cbd87b815966f842d24fdcb823397b910
+  MLRouterIntegrationTests: c6f18a8a995c925489604822d4af65b99c113fea
+  MLRouterTestKit: 5420fd9642102af42017370cf034f68a7b752dc8
+  MLUserComponent: 25fde88491d2b5326aa031901ead2b77fa02b094
+
+PODFILE CHECKSUM: 73e18f2d20f615c7f4f88015912e83d190bc74ca
+
+COCOAPODS: 1.11.3

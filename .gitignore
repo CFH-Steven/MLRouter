@@ -1,0 +1,28 @@
+# ============ Xcode ============
+# 用户专属方案数据（含个人设备名，不应入库）
+**/xcuserdata/
+*.xcuserstate
+xcuserdata/
+
+# 构建产物
+DerivedData/
+build/
+*.o
+*.hmap
+
+# ============ CocoaPods ============
+# 依赖由 Podfile 还原，不入库
+Pods/
+
+# ============ 本地 Agent / 个人数据 ============
+# WorkBuddy 本地记忆、技能、任务等，含个人偏好，禁止入库
+.workbuddy/
+
+# ============ 系统 ============
+.DS_Store
+*.swp
+*~
+
+# ============ 编辑器 ============
+.idea/
+.vscode/
