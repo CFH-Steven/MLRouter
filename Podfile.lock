@@ -16,7 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - MLCartComponent (from `LocalPods/MLCartComponent`)
-  - MLRouter (from `MLRouter`)
+  - MLRouter (from `.`)
   - MLRouterIntegrationTests (from `LocalPods/MLRouterIntegrationTests`)
   - MLRouterIntegrationTests/Tests (from `LocalPods/MLRouterIntegrationTests`)
   - MLRouterTestKit (from `LocalPods/MLRouterTestKit`)
@@ -26,7 +26,7 @@ EXTERNAL SOURCES:
   MLCartComponent:
     :path: LocalPods/MLCartComponent
   MLRouter:
-    :path: MLRouter
+    :path: "."
   MLRouterIntegrationTests:
     :path: LocalPods/MLRouterIntegrationTests
   MLRouterTestKit:
@@ -36,11 +36,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MLCartComponent: dcda2741e7d061cdce043ca171bd333a740205db
-  MLRouter: 3141914cbd87b815966f842d24fdcb823397b910
+  MLRouter: e91191edbaf15a2d707e0d5f21d003dc00638038
   MLRouterIntegrationTests: c6f18a8a995c925489604822d4af65b99c113fea
   MLRouterTestKit: 5420fd9642102af42017370cf034f68a7b752dc8
   MLUserComponent: 25fde88491d2b5326aa031901ead2b77fa02b094
 
-PODFILE CHECKSUM: 73e18f2d20f615c7f4f88015912e83d190bc74ca
+PODFILE CHECKSUM: 536b823519e3a7a2ccb2099c0f90fa7129782525
 
 COCOAPODS: 1.11.3

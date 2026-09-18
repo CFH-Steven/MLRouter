@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/CFH-Steven/MLRouter.git', :tag => s.version.to_s }
   
   s.ios.deployment_target = '11.0'
-  s.source_files = 'MLRouter/Classes/**/*'
-  s.public_header_files = 'MLRouter/Classes/**/*.h'
+  s.source_files = 'MLRouter/MLRouter/Classes/**/*'
+  s.public_header_files = 'MLRouter/MLRouter/Classes/**/*.h'
   s.header_dir = 'MLRouter'
 
   # 🔥【大厂级工程核心配置】
